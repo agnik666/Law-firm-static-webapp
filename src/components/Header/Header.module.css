@@ -11,5 +11,12 @@
 .navlinks {
     display: flex;
     gap: 1.5rem;
+}
+
+.navlinks > p {
+    cursor: pointer;
+}
+
+.contactNow {
     cursor: pointer;
 }

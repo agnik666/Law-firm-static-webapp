@@ -15,7 +15,9 @@ function Header({ props }) {
           <p>{props.header4}</p>
         </div>
       </nav>
-      <ContactNow style={{ cursor: "pointer" }} />
+      <div className={styles.contactNow}>
+        <ContactNow />
+      </div>
     </header>
   );
 }

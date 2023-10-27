@@ -13,6 +13,14 @@ function FourthSection() {
     setIsSelected(cardIndex);
   };
 
+  const handleIncrement = (isSelected) => {
+    if (isSelected < 2) setIsSelected(++isSelected);
+  };
+
+  const handleDecrement = (isSelected) => {
+    if (isSelected > 0) setIsSelected(--isSelected);
+  };
+
   return (
     <div className={styles.sectionContainer}>
       <div className={styles.sectionWrapper}>
@@ -20,10 +28,14 @@ function FourthSection() {
           <h1>What our happy Clients says</h1>
         </div>
         <div className={styles.buttons}>
-          <RenderNavIcon IconComponent={LeftArrow} />
+          <RenderNavIcon
+            IconComponent={LeftArrow}
+            handleClick={() => handleDecrement(isSelected)}
+          />
           <RenderNavIcon
             IconComponent={RightArrow}
             style={{ backgroundColor: "#E3B748" }}
+            handleClick={() => handleIncrement(isSelected)}
           />
         </div>
       </div>

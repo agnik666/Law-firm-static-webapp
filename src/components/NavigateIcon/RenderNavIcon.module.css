@@ -6,4 +6,10 @@
     height: 80px;
     border-radius: 50%;
     background-color: var(--color-white);
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.circularWrapper:hover {
+    opacity: 0.4;
 }
