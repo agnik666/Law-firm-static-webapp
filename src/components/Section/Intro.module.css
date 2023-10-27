@@ -6,7 +6,7 @@
 
 .shape {
     position: relative;
-    transform: translateX(-3%);
+    transform: translate(-3%);
 }
 
 .person {
@@ -60,8 +60,8 @@
     border: none;
     position: absolute;
     right: 0;
-    transform: translateX(-10%);
-    padding: 10px;
+    transform: translateX(-3%);
+    padding: 15px;
     cursor: pointer;
 }
 
