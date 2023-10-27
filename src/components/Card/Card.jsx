@@ -1,11 +1,8 @@
 import React from "react";
 import styles from "./Card.module.css";
 import RenderBuyIcon from "../BuyIcon/RenderBuyIcon";
-import { ReactComponent as JaneCooperAvatar } from "../../assets/JaneCooper.svg";
-import { ReactComponent as DevonLaneAvatar } from "../../assets/DevonLane.svg";
-import { ReactComponent as RobertFoxAvatar } from "../../assets/RobertFox.svg";
 
-function Card({ isSelected, rate, onSelect, index, name, type }) {
+function Card({ isSelected, rate, onSelect, avatarUrl, name, type }) {
   const selectedClass = isSelected ? styles.active : "";
 
   switch (type) {
@@ -32,13 +29,12 @@ function Card({ isSelected, rate, onSelect, index, name, type }) {
       );
 
     case "person":
-      console.log(index);
       return (
         <div
           className={`${styles.cardWrapper} ${selectedClass}`}
           onClick={onSelect}
         >
-          <JaneCooperAvatar />
+          <img src={avatarUrl} alt="avatar" className={styles.avatar} />
           <div className={styles.title}>
             <h2>{name}</h2>
           </div>

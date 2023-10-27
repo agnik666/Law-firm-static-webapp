@@ -28,3 +28,9 @@
 .active {
     background-color: #2e2e2e;
 }
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
