@@ -7,7 +7,7 @@ import { ReactComponent as RightArrow } from "../../../assets/RightArrow.svg";
 import Card from "../../Card/Card";
 
 function FourthSection() {
-  const [isSelected, setIsSelected] = useState(null); // will store the index value of selected card
+  const [isSelected, setIsSelected] = useState(1); // will store the index value of selected card
 
   const handleCardClick = (cardIndex) => {
     setIsSelected(cardIndex);
