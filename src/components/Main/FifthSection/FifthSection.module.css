@@ -1,0 +1,25 @@
+.sectionWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem 10rem 5rem;
+    background-color: var(--color-secondary);
+    text-align: center;
+}
+
+.title {
+    width: 480px;
+    height: 200px;
+    font-size: 25px;
+}
+
+.title > h1 {
+    font-weight: 500;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem 5rem;
+}

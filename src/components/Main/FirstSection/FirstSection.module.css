@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem 3rem 5rem;
+    font-weight: 600;
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+.leftTextWrapper {
+    width: 400px;
+    height: 200px;
+    font-size: 25px;
+}
+
+.line {
+    width: 1px;
+    height: 200px;
+    background-color: #6A6A6A;
+}
+
+.leftTextWrapper > h1 {
+    font-weight: 500;
+}
+
+.rightWrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 40%;
+}
+
+.rightTextWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.rightTextWrapper > p {
+    width: 400px;
+    opacity: 0.4;
+}

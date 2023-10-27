@@ -1,0 +1,67 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem 3rem 5rem;
+    font-weight: 600;
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding-bottom: 200px;
+}
+
+.leftTextWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 200px;
+    font-size: 25px;
+}
+
+.leftTextWrapper > p {
+    opacity: 0.4;
+    font-weight: 400;
+}
+
+.horizontalLine {
+    width: 539px;
+    height: 2px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-white);
+    opacity: 0.4;
+}
+
+.rightAccordion {
+    width: 540px;
+    height: 540px;
+}
+.accordion {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+.accordionTitle {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    background-color: var(--color-secondary);
+    border: none;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.accordionTitle > h2 {
+    font-weight: 600;
+}
+
+.panel {
+    width: 500px;
+    height: 100px;
+}
+
+.panel > p {
+    font-weight: 500;
+    opacity: 0.4;
+}

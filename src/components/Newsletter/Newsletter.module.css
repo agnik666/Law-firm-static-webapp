@@ -1,0 +1,50 @@
+.Wrapper {
+    padding: 3rem 5rem 3rem 5rem;
+    width: 100%;
+    background-color: var(--color-secondary);
+    padding-bottom: 100px;
+}
+
+.Newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 1250px;
+    height: 360px;
+    padding: 5rem;
+    background-color: rgba(71, 71, 71, 0.50);
+}
+
+.title > h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.flexbox > input {
+    width: 300px;
+    height: 60px;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+    outline: none;
+}
+
+.newsletterInputFirst {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.button {
+    background-color: var(--color-primary);
+    border: none;
+    padding: 1rem;
+    width: 120px;
+    height: auto;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}

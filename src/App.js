@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header/Header";
+import FifthSection from "./components/Main/FifthSection/FifthSection";
+import FirstSection from "./components/Main/FirstSection/FirstSection";
+import FourthSection from "./components/Main/FourthSection/FourthSection";
+import SecondSection from "./components/Main/SecondSection/SecondSection";
+import SixthSection from "./components/Main/SixthSection/SixthSection";
+import ThirdSection from "./components/Main/ThirdSection/ThirdSection";
+import Newsletter from "./components/Newsletter/Newsletter";
+import Intro from "./components/Section/Intro";
+import Footer from "./components/Footer/Footer";
+
+const headerConstants = {
+  header1: "Home",
+  header2: "Attorneys",
+  header3: "Practice Areas",
+  header4: "About Us",
+};
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <Header props={headerConstants} />
+        <Intro />
+        <FirstSection />
+        <SecondSection />
+        <ThirdSection />
+        <FourthSection />
+        <FifthSection />
+        <SixthSection />
+        <Newsletter />
+        <Footer props={headerConstants} />
+      </>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 5rem 3rem 5rem;
+    font-weight: 600;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.navlinks {
+    display: flex;
+    gap: 1.5rem;
+    cursor: pointer;
+}
