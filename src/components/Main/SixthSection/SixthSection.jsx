@@ -55,7 +55,7 @@ function SixthSection() {
                   onClick={() => handleClick(index)}
                 >
                   <h2>{accordion.title}</h2>
-                  <div className={expandedItems[index] && styles.icon}>
+                  <div className={expandedItems[index] && styles.hideDisplay}>
                     <RenderExpandIcon />
                   </div>
                 </button>

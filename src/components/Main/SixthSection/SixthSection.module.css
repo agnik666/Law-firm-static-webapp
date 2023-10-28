@@ -65,3 +65,7 @@
     font-weight: 500;
     opacity: 0.4;
 }
+
+.hideDisplay {
+    display: none;
+}
